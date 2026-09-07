@@ -38,6 +38,9 @@ RUN mkdir -p storage/logs storage/framework/cache storage/framework/sessions sto
 # Set permissions
 RUN chmod -R 755 storage bootstrap/cache
 
+# Make start.sh executable
+RUN chmod +x start.sh
+
 # Expose port
 EXPOSE 8000
 
